@@ -79,6 +79,16 @@ date_format = "Jan 2006"
   description = ""
 
 [[item]]
+  organization = "UC Berkeley"
+  organization_url = "https://www.berkeley.edu"
+  title = "Software as a Service"
+  url = "https://www.classcentral.com/course/coursera-software-as-a-service-305"
+  certificate_url = "https://www.dropbox.com/s/3f9k8doabv3edct/CourseraSaas.pdf"
+  date_start = "2012-04-01"
+  date_end = ""
+  description = ""
+
+[[item]]
   organization = "Microsoft"
   organization_url = "https://microsofot.com"
   title = "PRO: Designing and Developing Windows Azure Applications "
