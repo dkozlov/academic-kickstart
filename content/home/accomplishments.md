@@ -17,6 +17,15 @@ date_format = "Jan 2006"
 #   `title`, `organization` and `date_start` are the required parameters.
 #   Leave other parameters empty if not required.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
+[[item]]
+  organization = "The Cloud Native Computing Foundation (CNCF)"
+  organization_url = "https://www.cncf.io"
+  title = "Certified Kubernetes Administrator (CKA)"
+  url = "https://www.cncf.io/certification/cka/"
+  certificate_url = "https://www.dropbox.com/s/xumg3j7yw1hwy6w/CKA_Certificate.pdf?dl=0"
+  date_start = "2019-08-21"
+  date_end = ""
+  description = ""
 
 [[item]]
   organization = "Google Cloud"
@@ -53,7 +62,7 @@ date_format = "Jan 2006"
   organization_url = "https://microsofot.com"
   title = "Microsoft Azure for Research training"
   url = "http://research.microsoft.com/en-us/projects/azure/training.aspx"
-  certificate_url = ""
+  certificate_url = "https://www.dropbox.com/s/mmbp1s9p6c007da/MicrosoftAzureForResearch.jpg?dl=0"
   date_start = "2014-08-01"
   date_end = ""
   description = ""

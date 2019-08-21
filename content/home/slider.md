@@ -23,6 +23,25 @@ height = "500px"
   # Overlay a color or image (optional).
   #   Deactivate an option by commenting out the line, prefixing it with `#`.
   overlay_color = "#666"  # An HTML color value.
+  overlay_img = "logo_cka.png"  # Image path relative to your `static/img/` folder.
+  overlay_filter = 0  # Darken the image. Value in range 0-1.
+
+  # Call to action button (optional).
+  #   Activate the button by specifying a URL and button label below.
+  #   Deactivate by commenting out parameters, prefixing lines with `#`.
+  cta_label = "August 21, 2019"
+  cta_url = "https://www.dropbox.com/s/xumg3j7yw1hwy6w/CKA_Certificate.pdf?dl=0"
+  cta_icon_pack = "fab"
+  cta_icon = ""
+
+[[item]]
+  title = ""
+  content = ""
+  align = "left"
+
+  # Overlay a color or image (optional).
+  #   Deactivate an option by commenting out the line, prefixing it with `#`.
+  overlay_color = "#666"  # An HTML color value.
   overlay_img = "1521044380812.png"  # Image path relative to your `static/img/` folder.
   overlay_filter = 0  # Darken the image. Value in range 0-1.
 
