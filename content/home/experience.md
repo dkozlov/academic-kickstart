@@ -18,7 +18,7 @@ date_format = "Jan 2006"
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 [[experience]]
-  title = "DevOps Engineer / Machine Learning Engineer"
+  title = "Dev/ML/Sys/Ops Engineer / SRE / Machine Learning Engineer"
   company = "Gigster"
   company_url = "http://gigster.com"
   location = "San Francisco Bay Area"
@@ -26,7 +26,7 @@ date_format = "Jan 2006"
   date_end = ""
   description = """
   * Back-end and automated deployment for Computer Vision services
-  * GKE, GCE, Kubernetes, Kubespray, Helm, Cert-manager, GCP/container-engine-accelerators, NVIDIA/k8s-device-plugin, GPU monitoring, Prometheus-operator, Grafana, Kong, Istio, NGINX Ingress, Ansible, Terraform, Google Cloud, AWS, Performance testing, Ceph by Rook Storage Orchestration, Redis, Jenkins-X, Docker, s3fs, Cluster-autoscaler, Preemptible instances, NATS, Async messaging, ExternalDNS
+  * GKE, GCE, Kubernetes, Kubespray, Helm, Cert-manager, GCP/container-engine-accelerators, NVIDIA/k8s-device-plugin, GPU monitoring, Prometheus-operator, Grafana, Kong, Istio, NGINX Ingress, Ansible, Terraform, Google Cloud, AWS, Performance testing, Ceph by Rook Storage Orchestration, Redis, Jenkins-X, Docker, s3fs, Cluster-autoscaler, Preemptible instances, NATS, Async messaging, ExternalDNS, Jaeger, Elasticsearch, OpenTracing, OpenTelemetry, Distributed tracing
   * nvidia-docker2, CUDA, cuDNN, TensorFlow, Pytorch, MXNet"""
 
 [[experience]]
