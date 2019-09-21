@@ -18,7 +18,7 @@ date_format = "Jan 2006"
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 [[experience]]
-  title = "Dev/ML/Sys/Ops Engineer / SRE / Machine Learning Engineer"
+  title = "Dev/ML/Sys/Ops Engineer, SRE, Machine Learning Engineer"
   company = "Gigster"
   company_url = "http://gigster.com"
   location = "San Francisco Bay Area"

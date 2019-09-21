@@ -10,7 +10,7 @@ authors:
 superuser: true
 
 # Role/position
-role: Dev/ML/Sys/Ops Engineer / SRE / Machine Learning Engineer
+role: Dev/ML/Sys/Ops Engineer, SRE, Machine Learning Engineer
 
 # Organizations/Affiliations
 organizations:
@@ -18,7 +18,7 @@ organizations:
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: Dev/ML/Sys/Ops Engineer / SRE / Machine Learning Engineer
+bio: Dev/ML/Sys/Ops Engineer, SRE, Machine Learning Engineer
 
 interests:
 - MLOps
