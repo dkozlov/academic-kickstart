@@ -26,7 +26,7 @@ date_format = "Jan 2006"
   date_end = ""
   description = """
   * Back-end and automated deployment for Computer Vision services
-  * GKE, GCE, Kubernetes, Kubeflow, Kubespray, Helm, Cert-manager, GCP/container-engine-accelerators, NVIDIA/k8s-device-plugin, GPU monitoring, Prometheus-operator, Grafana, Kong, Istio, NGINX Ingress, Ansible, Terraform, Google Cloud, AWS, Performance testing, Ceph by Rook Storage Orchestration, Redis, Jenkins-X, Docker, s3fs, Cluster-autoscaler, Preemptible instances, NATS, Async messaging, ExternalDNS, Jaeger, Elasticsearch, OpenTracing, OpenTelemetry, Distributed tracing
+  * GKE, GCE, Kubernetes, Kubeflow, Kubespray, Helm, Cert-manager, GCP/container-engine-accelerators, NVIDIA/k8s-device-plugin, GPU monitoring, Prometheus-operator, Grafana, Kong, Istio, NGINX Ingress, Ansible, Terraform, Google Cloud, AWS, Performance testing, Ceph by Rook Storage Orchestration, Redis, Jenkins-X, Docker, s3fs, Cluster-autoscaler, Preemptible instances, NATS, Async messaging, ExternalDNS, Jaeger, Elasticsearch, OpenTracing, OpenTelemetry, Distributed tracing, gRPC
   * nvidia-docker2, CUDA, cuDNN, TensorFlow, Pytorch, MXNet"""
 
 [[experience]]
