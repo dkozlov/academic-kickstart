@@ -20,6 +20,16 @@ date_format = "Jan 2006"
 [[item]]
   organization = "The Cloud Native Computing Foundation (CNCF)"
   organization_url = "https://www.cncf.io"
+  title = "Certified Kubernetes Application Developer (CKAD)"
+  url = "https://training.linuxfoundation.org/certification/certified-kubernetes-application-developer-ckad/"
+  certificate_url = "https://www.youracclaim.com/badges/446400b6-9f4b-4aa5-ac9c-2ee7e31dad13"
+  date_start = "2019-11-06"
+  date_end = ""
+  description = ""
+
+[[item]]
+  organization = "The Cloud Native Computing Foundation (CNCF)"
+  organization_url = "https://www.cncf.io"
   title = "Certified Kubernetes Administrator (CKA)"
   url = "https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka"
   certificate_url = "https://www.youracclaim.com/badges/deec8439-5ebd-4af1-84a5-977e3decb509"
