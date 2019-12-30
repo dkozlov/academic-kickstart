@@ -45,7 +45,7 @@ date_format = "Jan 2006"
   company_url = "http://technoserv.com"
   location = "Moscow, Russian Federation"
   date_start = "2017-03-01"
-  date_end = "2018-09-01"
+  date_end = "2017-09-01"
   description = """
   * Credit automation for banks
   * Cloud Foundry, Spring Cloud, Ansible, Jenkins, Maven, Gradle, Docker, Spring Cloud Data Flow, Microservices, Nexus, RabbitMQ, Redis"""
