@@ -18,12 +18,12 @@ date_format = "Jan 2006"
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 [[experience]]
-  title = "Dev/ML/Sys/Ops Engineer, SRE, Machine Learning Engineer"
+  title = "Dev/ML/Ops Engineer, SRE, Machine Learning Engineer"
   company = "Gigster"
   company_url = "http://gigster.com"
   location = "San Francisco Bay Area"
   date_start = "2018-02-01"
-  date_end = ""
+  date_end = "2020-05-10"
   description = """
   * Back-end and automated deployment for Computer Vision services
   * GKE, GCE, Kubernetes, Kubeflow, Kubespray, Helm, Cert-manager, GCP/container-engine-accelerators, NVIDIA/k8s-device-plugin, GPU monitoring, Prometheus-operator, Grafana, Kong, Istio, NGINX Ingress, Ansible, Terraform, Google Cloud, AWS, Performance testing, Ceph by Rook Storage Orchestration, Redis, Jenkins-X, Docker, s3fs, Cluster-autoscaler, Preemptible instances, NATS, Async messaging, ExternalDNS, Jaeger, Elasticsearch, OpenTracing, OpenTelemetry, Distributed tracing, gRPC
