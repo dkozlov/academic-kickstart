@@ -26,8 +26,9 @@ date_format = "Jan 2006"
   date_end = "2020-05-10"
   description = """
   * Back-end and automated deployment for Computer Vision services
-  * GKE, GCE, Kubernetes, Kubeflow, Kubespray, Helm, Cert-manager, GCP/container-engine-accelerators, NVIDIA/k8s-device-plugin, GPU monitoring, Prometheus-operator, Grafana, Kong, Istio, NGINX Ingress, Ansible, Terraform, Google Cloud, AWS, Performance testing, Ceph by Rook Storage Orchestration, Redis, Jenkins-X, Docker, s3fs, Cluster-autoscaler, Preemptible instances, NATS, Async messaging, ExternalDNS, Jaeger, Elasticsearch, OpenTracing, OpenTelemetry, Distributed tracing, gRPC
-  * nvidia-docker2, CUDA, cuDNN, TensorFlow, Pytorch, MXNet"""
+  * GKE, GCE, Kubernetes, Kubespray, Helm, Cert-manager, GCP/container-engine-accelerators, NVIDIA/k8s-device-plugin, GPU monitoring, Prometheus-operator, Grafana, Kong, Istio, NGINX Ingress, Ansible, Terraform, Google Cloud, AWS, Performance testing, Ceph by Rook Storage Orchestration, Redis, Jenkins-X, Docker, s3fs, Cluster-autoscaler, Preemptible instances, NATS, Async messaging, ExternalDNS, Jaeger, Elasticsearch, OpenTracing, OpenTelemetry, Distributed tracing, gRPC, Argo, Knative
+  * Mobile app development: Android, Java, TF Lite
+  * Back-end development: Python, Go"""
 
 [[experience]]
   title = "Computer Vision Engineer"
