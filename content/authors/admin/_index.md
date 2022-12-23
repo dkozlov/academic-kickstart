@@ -10,7 +10,7 @@ authors:
 superuser: true
 
 # Role/position
-role: Dev/ML/Ops Engineer, Machine Learning Engineer
+role: Senior DevOps, MLOps and Machine Learning Engineer
 
 # Organizations/Affiliations
 organizations:
@@ -18,7 +18,7 @@ organizations:
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: Dev/ML/Ops Engineer, Machine Learning Engineer
+bio: Senior DevOps, MLOps and Machine Learning Engineer
 
 interests:
 - MLOps

@@ -18,13 +18,16 @@ date_format = "Jan 2006"
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 [[experience]]
-  title = "Framework Build and Release Engineer"
+  title = "Senior Software Engineer"
   company = "NVIDIA"
   company_url = "https://nvidia.com"
   location = "Santa Clara, CA, USA"
   date_start = "2020-08-17"
   date_end = ""
-  description = ""
+  description = """
+  * Deep Learning Frameworks Infrastructure team.
+  * Ansible, Python, Bash, Go, Docker, Moby BuildKit, GitLab CI, Multi-arch containers build and release, Multi-GPU training and inference, systems and applications maintenance, ansible roles and playbooks for configuring Deep Learning Frameworks machines from scratch.
+  """
 
 [[experience]]
   title = "Dev/ML/Ops Engineer, SRE, Machine Learning Engineer"
