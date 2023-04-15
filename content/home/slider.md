@@ -68,7 +68,7 @@ height = "500px"
   #   Activate the button by specifying a URL and button label below.
   #   Deactivate by commenting out parameters, prefixing lines with `#`.
   cta_label = "March 22, 2019"
-  cta_url = "https://www.credential.net/zpwn1gva"
+  cta_url = "https://www.dropbox.com/s/tf68kghusezgeb6/GCP_Professional_Cloud_Architect.pdf?dl=0"
   cta_icon_pack = "fab"
   cta_icon = "google"
 
@@ -82,7 +82,7 @@ height = "500px"
   overlay_filter = 0  # Darken the image. Value in range 0-1.
   
   cta_label = "March 12, 2019"
-  cta_url = "https://www.credential.net/9pef89fm"
+  cta_url = "https://www.dropbox.com/s/q4ucyws8koz0afi/GCP_Professional_Data_Engineer.pdf?dl=0"
   cta_icon_pack = "fab"
   cta_icon = "google"
 
@@ -96,7 +96,7 @@ height = "500px"
   overlay_filter = 0  # Darken the image. Value in range 0-1.
   
   cta_label = "April 22, 2019"
-  cta_url = "https://www.credential.net/yts3itxp"
+  cta_url = "https://www.dropbox.com/s/3wqwf9z1j1ejzjm/GCP_Professional_Cloud_Developer.pdf?dl=0"
   cta_icon_pack = "fab"
   cta_icon = "google"
 +++
