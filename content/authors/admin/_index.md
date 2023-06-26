@@ -28,7 +28,6 @@ interests:
 - Cloud Computing 
 - Docker, Kubernetes
 - Infrastructure as Code
-- GPU, FPGA, ASIC
 
 education:
   courses:
