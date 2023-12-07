@@ -26,7 +26,14 @@ date_format = "Jan 2006"
   date_end = ""
   description = """
   * Deep Learning Frameworks Infrastructure team.
-  * Ansible, Python, Bash, Go, Docker, Moby BuildKit, GitLab CI, Multi-arch containers build and release, Multi-GPU training and inference, systems and applications maintenance, ansible roles and playbooks for configuring Deep Learning Frameworks machines from scratch.
+  * Ansible, Python, Bash, Go, Docker, Moby BuildKit, GitLab CI, Multi-arch containers build and release
+  * Multi-GPU training and inference
+  * Systems and applications maintenance
+  * Ansible roles and playbooks for configuring GPUs-enabled systems from scratch
+  * Slurm cluster configuration and maintenance
+  * Participation in code reviews and mentorship program
+  * Linux system administration on GPUs-enabled bare-metal nodes
+  * Debugging and troubleshooting service crashes and monitoring resources
   """
 
 [[experience]]
