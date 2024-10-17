@@ -41,6 +41,6 @@
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 [[main]]
-    name = "CV"
-    url = "https://www.dropbox.com/s/uanohlviwzz3nmw/Curriculum%20Vitae.docx?dl=0"
+    name = "Resume"
+    url = "https://www.dropbox.com/scl/fi/9fnjdxiq2n15k9dfly7id/Curriculum-Vitae.docx?rlkey=5yxery8gwfwruo2gx17h2e62e&st=lxctrmmi&dl=0"
     weight = 70
