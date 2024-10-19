@@ -27,7 +27,8 @@ date_format = "Jan 2006"
   description = """
   * Deep Learning Frameworks Infrastructure team.
   * Ansible, Python, Bash, Go, Docker, Moby BuildKit, GitLab CI, Multi-arch containers build and release
-  * Multi-GPU training and inference
+  * Kubernetes, Grafana, Prometheus, OpenTelemetry
+  * Multi-GPU multi-node training and inference
   * Systems and applications maintenance
   * Ansible roles and playbooks for configuring GPUs-enabled systems from scratch
   * Slurm cluster configuration and maintenance
