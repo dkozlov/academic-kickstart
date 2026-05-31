@@ -56,7 +56,7 @@ date_format = "Jan 2006"
   date_start = "2019-03-22"
   date_end = ""
   description = ""
-  
+
 [[item]]
   organization = "Google Cloud"
   organization_url = "https://cloud.google.com/certification/"
@@ -69,7 +69,7 @@ date_format = "Jan 2006"
 
 [[item]]
   organization = "Microsoft"
-  organization_url = "https://microsofot.com"
+  organization_url = "https://microsoft.com"
   title = "Microsoft Azure for Research training"
   url = "http://research.microsoft.com/en-us/projects/azure/training.aspx"
   certificate_url = "https://www.dropbox.com/s/mmbp1s9p6c007da/MicrosoftAzureForResearch.jpg?dl=0"
@@ -89,7 +89,7 @@ date_format = "Jan 2006"
 
 [[item]]
   organization = "Microsoft"
-  organization_url = "https://microsofot.com"
+  organization_url = "https://microsoft.com"
   title = "Programming in HTML5 with JavaScript and CSS3"
   url = "https://www.microsoft.com/en-us/learning/exam-70-480.aspx"
   certificate_url = "https://www.youracclaim.com/badges/03b5d7e2-80ee-42aa-83de-0132cb7c7cf3"
@@ -106,25 +106,4 @@ date_format = "Jan 2006"
   date_start = "2012-04-01"
   date_end = ""
   description = ""
-
-[[item]]
-  organization = "Microsoft"
-  organization_url = "https://microsofot.com"
-  title = "PRO: Designing and Developing Windows Azure Applications "
-  url = ""
-  certificate_url = "https://mcp.microsoft.com/Anonymous/Transcript"
-  date_start = "2011-11-16"
-  date_end = ""
-  description = "Transcript ID: 994641, Access Code: 12345678"
-
-[[item]]
-  organization = "Microsoft"
-  organization_url = "https://microsofot.com"
-  title = "Windows Server 2008 R2, Server Virtualization"
-  url = ""
-  certificate_url = "https://mcp.microsoft.com/Anonymous/Transcript"
-  date_start = "2011-10-01"
-  date_end = ""
-  description = "Transcript ID: 994641, Access Code: 12345678"
-
 +++

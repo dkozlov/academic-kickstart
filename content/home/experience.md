@@ -18,7 +18,7 @@ date_format = "Jan 2006"
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 [[experience]]
-  title = "Senior Software Engineer"
+  title = "Senior Software Engineer, Tech Lead"
   company = "NVIDIA"
   company_url = "https://nvidia.com"
   location = "Santa Clara, CA, USA"
@@ -26,6 +26,7 @@ date_format = "Jan 2006"
   date_end = ""
   description = """
   * Deep Learning Frameworks Infrastructure team.
+  * Tech Lead: driving technical direction, design and code reviews, and mentorship.
   * Ansible, Python, Bash, Go, Docker, Moby BuildKit, GitLab CI, Multi-arch containers build and release
   * Kubernetes, Grafana, Prometheus, OpenTelemetry
   * Multi-GPU multi-node training and inference
@@ -63,7 +64,7 @@ date_format = "Jan 2006"
 [[experience]]
   title = "DevOps Engineer"
   company = "Technoserv"
-  company_url = "https://technoserv.com"
+  company_url = ""
   location = "Moscow, Russian Federation"
   date_start = "2017-03-01"
   date_end = "2017-09-01"
@@ -84,7 +85,7 @@ date_format = "Jan 2006"
 [[experience]]
   title = "DevOps Engineer"
   company = "Odin / Parallels Automation (PA)"
-  company_url = "https://www.cloudblue.com/odin/"
+  company_url = "https://www.cloudblue.com/"
   location = "Moscow, Russian Federation"
   date_start = "2014-10-01"
   date_end = "2016-10-01"
@@ -128,7 +129,7 @@ date_format = "Jan 2006"
 [[experience]]
   title = "SQL Developer"
   company = "JSC Chernigovets"
-  company_url = "http://sds-ugol.ru"
+  company_url = ""
   location = "Kemerovo Region, Russian Federation"
   date_start = "2010-07-01"
   date_end = "2011-06-01"

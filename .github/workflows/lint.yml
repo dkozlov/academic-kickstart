@@ -1,0 +1,74 @@
+name: Lint & Link Check
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+  schedule:
+    # Weekly link-rot check (Mondays 06:00 UTC).
+    - cron: '0 6 * * 1'
+
+jobs:
+  markdownlint:
+    name: Markdown style
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run markdownlint
+        uses: DavidAnson/markdownlint-cli2-action@v16
+        with:
+          globs: |
+            content/**/*.md
+
+  style-checks:
+    name: Custom style checks
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check for trailing whitespace
+        run: |
+          if grep -rnE ' +$' --include='*.md' content/; then
+            echo "::error::Trailing whitespace found"
+            exit 1
+          fi
+
+      - name: Check for tab characters
+        run: |
+          if grep -rnP '\t' --include='*.md' content/; then
+            echo "::error::Tab character found (use spaces)"
+            exit 1
+          fi
+
+  link-check:
+    name: Build & link check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.69.2'
+          extended: true
+
+      - name: Build site
+        run: HUGO_ENV=production hugo --gc --minify
+
+      - name: Install lychee
+        run: |
+          LYCHEE_VERSION=v0.24.2
+          curl -sSL "https://github.com/lycheeverse/lychee/releases/download/${LYCHEE_VERSION}/lychee-x86_64-unknown-linux-gnu.tar.gz" \
+            | tar -xz --strip-components=1 lychee-x86_64-unknown-linux-gnu/lychee
+          sudo install -m 0755 lychee /usr/local/bin/lychee
+          lychee --version
+
+      - name: Run lychee link checker
+        run: |
+          lychee --no-progress \
+            --config .lychee.toml \
+            --root-dir "$GITHUB_WORKSPACE/public" \
+            "public/**/*.html"

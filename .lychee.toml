@@ -1,0 +1,21 @@
+cache = true
+max_cache_age = "7d"
+
+# Treat these as success (sites that rate-limit or block bots).
+accept = [200, 206, 403, 429, 999]
+
+# Some hosts block HEAD requests; use GET.
+method = "get"
+
+exclude = [
+  # LinkedIn aggressively blocks automated requests (often returns 999).
+  "^https?://([a-z]+\\.)?linkedin\\.com/",
+  # Theme-generated "Powered by Academic" footer credit (alive, but flaky over HTTP/2).
+  "^https://sourcethemes\\.com/academic/?$",
+]
+
+# Only the rendered site under `public/` is link-checked in CI (see the workflow),
+# so we don't exclude it here. Skip VCS internals if lychee is ever run at the repo root.
+exclude_path = [
+  ".git",
+]

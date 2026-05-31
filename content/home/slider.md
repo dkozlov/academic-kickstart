@@ -80,7 +80,7 @@ height = "500px"
   overlay_color = "#666"  # An HTML color value.
   overlay_img = "1521043927706.png"  # Image path relative to your `static/img/` folder.
   overlay_filter = 0  # Darken the image. Value in range 0-1.
-  
+
   cta_label = "March 12, 2019"
   cta_url = "https://www.dropbox.com/s/q4ucyws8koz0afi/GCP_Professional_Data_Engineer.pdf?dl=0"
   cta_icon_pack = "fab"
@@ -94,7 +94,7 @@ height = "500px"
   overlay_color = "#666"  # An HTML color value.
   overlay_img = "1548352102758.png"  # Image path relative to your `static/img/` folder.
   overlay_filter = 0  # Darken the image. Value in range 0-1.
-  
+
   cta_label = "April 22, 2019"
   cta_url = "https://www.dropbox.com/s/3wqwf9z1j1ejzjm/GCP_Professional_Cloud_Developer.pdf?dl=0"
   cta_icon_pack = "fab"
