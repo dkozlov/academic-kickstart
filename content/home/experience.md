@@ -29,6 +29,7 @@ date_format = "Jan 2006"
   * Tech Lead: driving technical direction, design and code reviews, and mentorship.
   * Ansible, Python, Bash, Go, Docker, Moby BuildKit, GitLab CI, Multi-arch containers build and release
   * Kubernetes, Grafana, Prometheus, OpenTelemetry
+  * Temporal for durable workflows execution
   * Multi-GPU multi-node training and inference
   * Systems and applications maintenance
   * Ansible roles and playbooks for configuring GPUs-enabled systems from scratch
