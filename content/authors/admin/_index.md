@@ -13,9 +13,7 @@ superuser: true
 role: Senior Software Engineer & Tech Lead · DevOps, MLOps and Machine Learning
 
 # Organizations/Affiliations
-organizations:
-- name: NVIDIA
-  url: "https://nvidia.com"
+organizations: []
 
 # Short bio (displayed in user profile at end of posts)
 bio: Senior Software Engineer and Tech Lead focused on DevOps, MLOps and Machine Learning.
