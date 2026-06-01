@@ -1,0 +1,113 @@
+{{- /* Generate the search index. */ -}}
+{{- $index := slice -}}
+{{- $pages := site.RegularPages -}}
+{{- /* Add the index page of docs separately since it's not in RegularPages above. */ -}}
+{{- $pages := $pages | union (where (where site.Pages "Kind" "section") "Type" "docs") -}}
+{{- /* Add author pages to index so their bios can be searched. Hide empty `/authors/` node. */ -}}
+{{- $pages := $pages | union (where (where site.Pages "Section" "authors") "Params.name" "!=" nil) -}}
+
+{{- range $pages -}}
+  {{- /* Do not index drafts or private pages. */ -}}
+  {{- if and (not .Draft) (not .Params.private) -}}
+
+    {{- /* Generate page description. */ -}}
+    {{- $desc := "" -}}
+    {{- if .Params.summary -}}
+      {{- $desc = .Params.summary -}}
+    {{- else if .Params.abstract -}}
+      {{- $desc = .Params.abstract -}}
+    {{- else -}}
+      {{- $desc = .Summary -}}
+    {{- end -}}
+
+    {{- $authors := .Params.authors -}}
+    {{- $title := .Title}}
+    {{- $rel_permalink := .RelPermalink -}}
+    {{- $permalink := .Permalink -}}
+    {{- $content := .Plain -}}
+
+    {{/* Correct the title and URL for author profile pages. */}}
+    {{- if eq .Section "authors" -}}
+      {{- $title = .Params.name -}}
+      {{- $username := path.Base (path.Split .Path).Dir -}}
+      {{- with site.GetPage (printf "/authors/%s" $username) -}}
+        {{- $permalink = .Permalink -}}
+        {{- $rel_permalink = .RelPermalink -}}
+      {{- end -}}
+      {{- /* Enrich author bio with role, interests and education from front matter. */ -}}
+      {{- $bioparts := slice .Params.bio .Params.role -}}
+      {{- with .Params.organizations -}}{{- range . -}}{{- $bioparts = $bioparts | append .name -}}{{- end -}}{{- end -}}
+      {{- with .Params.interests -}}{{- $bioparts = $bioparts | append . -}}{{- end -}}
+      {{- with .Params.skills -}}{{- range . -}}{{- with .items -}}{{- range . -}}{{- $bioparts = $bioparts | append .name -}}{{- end -}}{{- end -}}{{- end -}}{{- end -}}
+      {{- with .Params.education -}}{{- with .courses -}}{{- range . -}}{{- $bioparts = $bioparts | append (slice .course .institution) -}}{{- end -}}{{- end -}}{{- end -}}
+      {{- $content = printf "%s %s" $content (delimit (apply $bioparts "plainify" ".") " ") -}}
+      {{- if not $desc -}}{{- $desc = .Params.bio -}}{{- end -}}
+    {{- else -}}
+      {{/* Include a user's display name rather than username where possible. */}}
+      {{- if .Params.authors -}}
+        {{- $authorLen := len .Params.authors -}}
+        {{- if gt $authorLen 0 -}}
+          {{- $authors = slice -}}
+            {{- range $k, $v := .Params.authors -}}
+              {{- $person_page_path := (printf "/authors/%s" (urlize $v)) -}}
+              {{- $person_page := site.GetPage $person_page_path -}}
+              {{- if and $person_page $person_page.File -}}
+                {{- $person := $person_page.Params -}}
+                {{- $authors = $authors | append $person.name -}}
+              {{- else -}}
+                {{- $authors = $authors | append ($v | plainify) -}}
+              {{- end -}}
+            {{- end -}}
+          {{- end -}}
+        {{- end -}}
+    {{- end -}}
+
+    {{- /* Add page to index. */ -}}
+    {{- $index = $index | append (dict "objectID" .File.UniqueID "date" .Date.UTC.Unix "publishdate" .PublishDate "lastmod" .Lastmod.UTC.Unix "expirydate" .ExpiryDate.UTC.Unix "lang" .Lang "permalink" $permalink "relpermalink" $rel_permalink "title" $title "summary" (plainify $desc) "content" $content "authors" $authors "kind" .Kind "type" .Type "section" .Section "tags" .Params.Tags "categories" .Params.Categories) -}}
+
+  {{- end -}}
+{{- end -}}
+
+{{- /* Index homepage widgets whose content lives in front matter (headless page sections). */ -}}
+{{- $home := site.GetPage "/" -}}
+{{- $home_bundle := site.GetPage "/home" -}}
+{{- with $home_bundle -}}
+{{- range (where ($home_bundle.Resources.ByType "page") ".Params.active" "!=" false) -}}
+  {{- if and (not .Draft) (not .Params.private) .File -}}
+    {{- $widget := .Params.widget -}}
+    {{- $anchor := .File.ContentBaseName -}}
+    {{- $parts := slice .Title .Params.subtitle .Plain -}}
+
+    {{- /* Experience widget: title, company, location and description per role. */ -}}
+    {{- with .Params.experience -}}
+      {{- range . -}}
+        {{- $parts = $parts | append (slice .title .company .location .description) -}}
+      {{- end -}}
+    {{- end -}}
+
+    {{- /* Accomplishments and other `item`-based widgets: title, organization, description. */ -}}
+    {{- with .Params.item -}}
+      {{- range . -}}
+        {{- $parts = $parts | append (slice .title .organization .content .description) -}}
+      {{- end -}}
+    {{- end -}}
+
+    {{- /* Build a flat, de-duplicated content string from the collected parts. */ -}}
+    {{- $flat := slice -}}
+    {{- range $parts -}}
+      {{- if . -}}{{- $flat = $flat | append (plainify .) -}}{{- end -}}
+    {{- end -}}
+    {{- $widget_content := trim (delimit $flat " ") " " -}}
+
+    {{- /* Only index widgets that actually carry searchable text. */ -}}
+    {{- if and $widget_content (in (slice "experience" "accomplishments") $widget) -}}
+      {{- $wtitle := replace ((.Title | default (humanize $widget)) | plainify) "&shy;" "" -}}
+      {{- $wpermalink := printf "%s#%s" $home.Permalink $anchor -}}
+      {{- $wrelpermalink := printf "%s#%s" $home.RelPermalink $anchor -}}
+      {{- $index = $index | append (dict "objectID" .File.UniqueID "date" $home.Date.UTC.Unix "publishdate" $home.PublishDate "lastmod" $home.Lastmod.UTC.Unix "expirydate" $home.ExpiryDate.UTC.Unix "lang" .Lang "permalink" $wpermalink "relpermalink" $wrelpermalink "title" $wtitle "summary" $wtitle "content" $widget_content "authors" slice "kind" "page" "type" "home" "section" "home" "tags" slice "categories" slice) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- end -}}
+
+{{- $index | jsonify -}}
